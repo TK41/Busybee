@@ -85,5 +85,17 @@
       max-width: 100%;
       height: auto;
     }
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  text-align: center;
+}
+
  
 
