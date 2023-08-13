@@ -1,20 +1,25 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Contact Busy Bee Florist</title>
+  <title>Busy Bee Florist</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header>
+    <div class="logo">Busy Bee Florist</div>
     <nav>
-      <ul>
+      <ul class="nav-links">
         <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="https://www.bhg.com.au/australian-native-flowers-a-guide-to-australian-flowers" target="_blank">Useful Links</a></li>
+        <li><a href="about.html">About Us</a></li>
       </ul>
+      <div class="hamburger">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
     </nav>
   </header>
-  <img src="Img2.jpeg" alt="Flower Image 1">
+  <img src="florist images/Img2.jpeg" alt="Flower Image 1">
 
   <section>
     <h1>Contact Busy Bee Florist</h1>
@@ -29,9 +34,44 @@
     <h2>Trading Hours</h2>
     <p>Monday - Friday: 9:00 am to 4:00 pm</p>
     <p>Saturday - Sunday: 9:00 am to 12:00 pm</p>
+  <section id="contact">
+    <p>Have questions or want to get in touch? Fill out the form below:</p>
+    
+    <form id="contactForm" action="submit_form.php" method="post">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="phone">Phone:</label>
+      <input type="tel" id="phone" name="phone">
+
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="4" required></textarea>
+
+      <div class="subscription">
+        <input type="checkbox" id="subscribe" name="subscribe">
+        <label for="subscribe">Subscribe to Newsletter</label>
+      </div>
+
+      <div class="country-group">
+        <label for="country">Country:</label>
+        <select id="country" name="country">
+          <option value="australia">Australia</option>
+          <option value="usa">United States</option>
+          <option value="uk">United Kingdom</option>
+          <option value="kenya">kenya</option>
+        </select>
+      </div>
+
+      <div class="submit-button">
+        <button type="submit">Submit</button>
+      </div>
+    </form>
   </section>
   
-  <img src="Img4.jpeg" alt="Flower Image 2">
+  <img src="florist images/Img4.jpeg" alt="Flower Image 2">
 
   <footer>
     <p>&copy; 2023 Busy Bee Florist. All rights reserved.</p>
