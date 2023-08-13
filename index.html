@@ -6,21 +6,24 @@
 </head>
 <body>
   <header>
-    <div class="container">
-    <h1>Busy Bee Florist</h1>
-    </div>
+    <div class="logo">Busy Bee Florist</div>
     <nav>
-      <ul>
+      <ul class="nav-links">
         <li><a href="about.html">About</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
+      <div class="hamburger">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
     </nav>
   </header>
 
   <section id="about">
     <h2>About Us</h2>
     <p>We are a small family-run local business, located and operating in Cairville for 5 years. With over 25 years of experience in floristry, we offer exceptional quality and choice of fresh flowers & foliage tailor-made to suit any occasion. Take advantage of our next-day home delivery service (order by 3pm the day before).</p>
-    <img src="Img5.jpeg" alt="Flower Arrangement">
+    <img src="florist images/Img5.jpeg" alt="Flower Arrangement">
   </section>
 
   <section id="contact">
@@ -34,7 +37,22 @@
       <li>Mon – Fri: 9.00 am to 4.00 pm</li>
       <li>Saturday – Sunday: 9.00 am to 12.00 pm</li>
     </ul>
+    <h3>Send Us a Message</h3>
+    <form id="contactForm">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+  
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+  
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="4" required></textarea>
+  
+      <button type="submit">Submit</button>
+    </form>
   </section>
+  <script src="script.js"></script>
+
 
   <section id="announcements">
     <h2>Announcements</h2>
@@ -49,7 +67,7 @@
       <li><a href="https://www.almanac.com/flower-meanings-language-flowers">Flower Meanings: Language of Flowers</a></li>
       <li><a href="https://indianapublicmedia.org/focusonflowers/rankings.php">Flower Rankings</a></li>
     </ul>
-    <img src="Img4.jpeg" alt="Flower Image">
+    <img src="florist images/Img4.jpeg" alt="Flower Image">
   </section>
 
   <section id="customer-comments">
@@ -62,7 +80,7 @@
       <p>"Excellent service, will be back again."</p>
       <cite>- Satisfied Customer</cite>
     </blockquote>
-    <img src="Img3.jpeg" alt="Flower Image">
+    <img src="florist images\Img3.jpeg" alt="Flower Image">
   </section>
 
   <footer>
