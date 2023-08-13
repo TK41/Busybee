@@ -5,6 +5,93 @@
       margin: 0;
       padding: 0;
     }
+    header {
+      background-color: #f8f8f8;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+    }
+    
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+    }
+    
+    nav {
+      display: flex;
+      align-items: center;
+    }
+    
+    .nav-links {
+      list-style: none;
+      display: flex;
+    }
+    
+    .nav-links li {
+      margin-right: 20px;
+    }
+    
+    .nav-links li:last-child {
+      margin-right: 0;
+    }
+    
+    .hamburger {
+      display: none;
+      flex-direction: column;
+      cursor: pointer;
+      padding: 5px;
+    }
+    
+    .bar {
+      width: 30px;
+      height: 3px;
+      background-color: #333;
+      margin: 3px 0;
+    }
+    
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  header {
+    display: block; /* Change display to block for vertical alignment */
+    text-align: center; /* Center-align the logo and links */
+  }
+
+  .logo {
+    margin-bottom: 10px; /* Add spacing below the logo */
+  }
+
+  .nav-links {
+    display: none; /* Hide the horizontal links */
+  }
+
+  .nav-links.active {
+    display: block; /* Show the vertical links on hamburger click */
+    background-color: #f8f8f8;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+}
+
+/* ... (other common styles) */
+
+/* Media query for tablets and larger phones */
+@media (min-width: 768px) {
+  header {
+    padding: 30px;
+  }
+
+  /* Adjust other styles for tablets and larger phones */
+}
+
+/* Media query for desktops and larger screens */
+@media (min-width: 992px) {
+  header {
+    padding: 40px;
+  }
+
+  /* Adjust other styles for desktops and larger screens */
+}
     
     /* Header styles */
     header {
@@ -85,6 +172,81 @@
       max-width: 100%;
       height: auto;
     }
+    /* Form styles */
+form {
+  margin-top: 20px;
+  border: 1px solid #ddd;
+  padding: 20px;
+  background-color: #ffffff00;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input,
+textarea {
+  width: 50%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+button {
+  background-color: #333;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: block; /* Display as a block element to center */
+  margin: left 10px; /* Auto margin horizontally for centering */
+}
+
+/* Error message styles */
+#error-message {
+  color: #ff5555;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+/* Media queries for responsive design */
+@media (max-width: 768px) {
+  input,
+  textarea {
+    width: 100%;
+  }
+}
+/* ... (other styles) */
+
+.subscription {
+  /* display: flex; */
+  align-items: left;
+  margin-bottom: 5px;
+}
+
+.subscription label {
+  margin-right: 5px;
+}
+
+.subscription input[type="checkbox"] {
+  margin-right: 5px; /* Adjust spacing as needed */
+}
+
+.country-group {
+  margin-top: 20px;
+}
+
+.submit-button {
+  margin-top: 20px;
+  text-align: center;
+}
+
+/* ... (other styles) */
+
 
  
 
